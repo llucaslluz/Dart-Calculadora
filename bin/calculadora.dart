@@ -8,5 +8,20 @@ void main() {
     print(numeroUm + numeroDois);
   }
 
+  void subtracao(){
+    print(numeroUm - numeroDois);
+  }
+
+  void divisao(){
+    print(numeroUm / numeroDois);
+  }
+
+  void mutiplicacao(){
+    print(numeroUm * numeroDois);
+  }
+
   soma();
+  subtracao();
+  divisao();
+  mutiplicacao();
 }
