@@ -24,7 +24,7 @@ void main() {
 
 
 
-  if (operacao == "+") {
+/*   if (operacao == "+") {
     soma();
   } else {
     if (operacao == "-") {
@@ -38,7 +38,20 @@ void main() {
             }
           }
       }
-    }
+    } */
 
+  switch (operacao) {
+    case "+":
+    soma();
 
+    case "-":
+    subtracao();
+
+    case "*":
+    mutiplicacao();
+
+    case "/":
+    divisao();
+    break;
+  }
 }
