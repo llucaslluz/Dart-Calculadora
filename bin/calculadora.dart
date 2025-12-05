@@ -22,20 +22,23 @@ void main() {
     print(numeroUm * numeroDois);
   }
 
+
+
   if (operacao == "+") {
     soma();
-  }
+  } else {
+    if (operacao == "-") {
+      subtracao();
+    } else {
+        if (operacao == "*") {
+          mutiplicacao();
+        } else {
+            if (operacao == "/") {
+              divisao();
+            }
+          }
+      }
+    }
 
-  if (operacao == "-") {
-    subtracao();
-  }
-
-  if (operacao == "*") {
-    mutiplicacao();
-  }
-
-  if (operacao == "/") {
-    divisao();
-  }
 
 }
