@@ -1,18 +1,41 @@
 import 'dart:io';
 
-double saldo = 1000.0; // Saldo inicial em reais
-
 void main() {
-  
+  double numeroUm = double.parse(stdin.readLineSync()!);
+  double numeroDois = double.parse(stdin.readLineSync()!);
+  String operacao = stdin.readLineSync()!;
 
-  print('Boas-vindas ao seu banco digital!');
-  print('Seu saldo atual é de: R\$${saldo.toStringAsFixed(2)}');
 
-  print('Digite o valor do Pix que deseja realizar:');
-  double valorPix = double.parse(stdin.readLineSync()!);
+  void soma() {
+    print(numeroUm + numeroDois);
+  }
 
-  saldo -= valorPix;
+  void subtracao(){
+    print(numeroUm - numeroDois);
+  }
 
-  print('Pix realizado com sucesso!');
-  print('Seu saldo atual é de: R\$${saldo.toStringAsFixed(2)}');
+  void divisao(){
+    print(numeroUm / numeroDois);
+  }
+
+  void mutiplicacao(){
+    print(numeroUm * numeroDois);
+  }
+
+  if (operacao == "+") {
+    soma();
+  }
+
+  if (operacao == "-") {
+    subtracao();
+  }
+
+  if (operacao == "*") {
+    mutiplicacao();
+  }
+
+  if (operacao == "/") {
+    divisao();
+  }
+
 }
