@@ -21,6 +21,23 @@ void main() {
     print(numeroUm * numeroDois);
   }
 
+  void calcular () {
+  switch (operacao) {
+    case "+":
+    soma();
+
+    case "-":
+    subtracao();
+
+    case "*":
+    mutiplicacao();
+
+    case "/":
+    divisao();
+    break;
+  }
+}
+
   print("Digite o Primeiro valor:");
 
   String? entrada = stdin.readLineSync();
@@ -28,6 +45,13 @@ void main() {
     if (entrada != "") {
       numeroUm = double.parse(entrada);
     }
+  }
+
+  print("Digite uma Operação matematica:");
+
+    entrada = stdin.readLineSync();
+  if (entrada != null) {
+    operacao = entrada;
   }
 
   print("Digite o Segundo valor:");
@@ -39,12 +63,10 @@ void main() {
     }
   }
 
-  print("Digite uma Operação matematica:");
+  print("O Resultado da operação é:");
+  
+  calcular();
 
-    entrada = stdin.readLineSync();
-  if (entrada != null) {
-    operacao = entrada;
-  }
 
 /*   if (operacao == "+") {
     soma();
@@ -62,18 +84,4 @@ void main() {
       }
     } */
 
-  switch (operacao) {
-    case "+":
-    soma();
-
-    case "-":
-    subtracao();
-
-    case "*":
-    mutiplicacao();
-
-    case "/":
-    divisao();
-    break;
-  }
 }
