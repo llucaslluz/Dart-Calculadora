@@ -21,6 +21,8 @@ void main() {
     print(numeroUm * numeroDois);
   }
 
+  print("Digite o Primeiro valor:");
+
   String? entrada = stdin.readLineSync();
   if(entrada != null) {
     if (entrada != "") {
@@ -28,12 +30,16 @@ void main() {
     }
   }
 
+  print("Digite o Segundo valor:");
+
   entrada = stdin.readLineSync();
   if (entrada != null) {
     if (entrada != "") {
       numeroDois = double.parse(entrada);
     }
   }
+
+  print("Digite uma Operação matematica:");
 
     entrada = stdin.readLineSync();
   if (entrada != null) {
