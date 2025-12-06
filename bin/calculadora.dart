@@ -1,4 +1,5 @@
 import 'dart:io';
+
 void main() {
   double numeroUm = 0;
   double numeroDois = 0;
@@ -40,11 +41,14 @@ void main() {
 }
 
   void getOperacao() {
-    print("Digite uma operação:");
+    print("Digite uma operação ${operacoes.toString()}");
     entrada = stdin.readLineSync();
     if (entrada != null) {
       if (operacoes.contains(entrada!)) {
         operacao = entrada!;
+      } else {
+        print("Operação Invalida");
+        getOperacao();
       }
     }
   }
