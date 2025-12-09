@@ -77,21 +77,6 @@ void main() {
 
   calcular();
 
-
-/*   if (operacao == "+") {
-    soma();
-  } else {
-    if (operacao == "-") {
-      subtracao();
-    } else {
-        if (operacao == "*") {
-          mutiplicacao();
-        } else {
-            if (operacao == "/") {
-              divisao();
-            }
-          }
-      }
-    } */
+//projeto finalizado
 
 }
